@@ -30,7 +30,22 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/email"
+            android:id="@+id/txtNombre"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_nombre" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtEmail"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
@@ -45,7 +60,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/password"
+            android:id="@+id/txtPassword"
             app:passwordToggleEnabled="true"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -59,8 +74,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Envia"
             android:text="@string/btn_registrar" />
 
     </LinearLayout>
