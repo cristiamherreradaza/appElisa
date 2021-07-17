@@ -55,6 +55,7 @@ public class RegistroActivity extends AppCompatActivity {
     }
 
     public void Envia(View view) {
+
         String url = "https://goghu.net/elisa/public/api/User/familiares";
         txtNombre = findViewById(R.id.txtNombre);
         txtEmail = findViewById(R.id.txtEmail);
@@ -64,33 +65,25 @@ public class RegistroActivity extends AppCompatActivity {
         correo = txtEmail.getEditText().getText().toString().trim();
         password = txtPassword.getEditText().getText().toString().trim();
 
-
         RequestQueue queue = Volley.newRequestQueue(RegistroActivity.this);
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
 
             @Override
-
             public void onResponse(String response) {
-                Toast.makeText(RegistroActivity.this, "dfdsfsd" + response, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistroActivity.this, "Registro Exitoso" + response, Toast.LENGTH_SHORT).show();
                 Log.i("My success", "" + response);
             }
 
         }, new Response.ErrorListener() {
-
             @Override
-
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(RegistroActivity.this, "my error :" + error, Toast.LENGTH_LONG).show();
                 Log.i("My error", "" + error);
             }
-
         }) {
-
             @Override
-
             protected Map<String, String> getParams() throws AuthFailureError {
-
                 Map<String, String> map = new HashMap<String, String>();
                 map.put("name", nombre);
                 map.put("email", correo);
@@ -102,4 +95,5 @@ public class RegistroActivity extends AppCompatActivity {
         };
         queue.add(request);
     }
+
 }

@@ -15,5 +15,6 @@
     <string name="form_direccion">Ingrese su Direccion</string>
     <string name="form_password">Ingrese su Password</string>
     <string name="btn_registrar">REGISTRAR</string>
+    <string name="btn_ingresar">INGRESAR</string>
     <string name="msg_registro">Ingrese sus Datos</string>
 </resources>

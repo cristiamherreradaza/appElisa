@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".RegistroActivity">
+    tools:context=".RegistroActivity"
+    >
 
     <ImageView
         android:layout_width="150dp"
@@ -18,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/msg_registro"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -46,6 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtEmail"
+            android:paddingTop="10dp"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
@@ -62,6 +64,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtPassword"
             app:passwordToggleEnabled="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             >
@@ -73,12 +77,13 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.button.MaterialButton
+
+        <Button
             android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="Envia"
-            android:text="@string/btn_registrar" />
+            android:text="Button" />
 
     </LinearLayout>
 
