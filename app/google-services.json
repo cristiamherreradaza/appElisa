@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "830310822445",
+    "project_id": "elisa-2cb3c",
+    "storage_bucket": "elisa-2cb3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830310822445:android:84e9b6c940dbcf2e587ea4",
+        "android_client_info": {
+          "package_name": "net.goghu.elisa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830310822445-3qfut1h7vmm9p83i4eo1jpdbchfihrl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.goghu.elisa",
+            "certificate_hash": "87d0b35adc55d48013eb5369c784deebca8e5c1b"
+          }
+        },
+        {
+          "client_id": "830310822445-3c3cdg9914p9deqpg7p6beh767bib5a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADfFmpeoPGlOt3ZNR8tt_53yeEMcUpdHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830310822445-3c3cdg9914p9deqpg7p6beh767bib5a8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
